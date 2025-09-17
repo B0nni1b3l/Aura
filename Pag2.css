@@ -1,0 +1,335 @@
+:root {
+    --cor-principal: rgb(36, 14, 2);
+    /* Um azul */
+    --cor-secundaria: rgb(102, 67, 53);
+    /* Um verde */
+    --cor-fundo-claro: #fff9ea;
+    /* Um cinza claro */
+    --cor-texto: #333;
+}
+
+
+body {
+    background: #fff9ea;
+}
+
+
+header {
+    width: 80%;
+    padding: 28px 8%;
+}
+
+.titulo {
+    font-size: 45px;
+    color: rgb(36, 14, 2);
+}
+
+.paragrafo {
+    font-size: 18px;
+    color: rgb(36, 14, 2);
+}
+
+#navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+#nav_logo {
+    font-size: 24px;
+    color: rgb(36, 14, 2);
+}
+
+
+
+
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+
+
+
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+}
+
+
+
+
+.nav-item.active a {
+    color: #1d1d1dad;
+    border-bottom: 3px solid rgb(102, 67, 53);
+}
+
+
+.btn-default {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(102, 67, 53);
+    border-radius: 12px;
+    padding: 10px 14px;
+    font-weight: 600;
+    box-sizing: 0px 0px 10px 2px rgba(0, 0, 0.1);
+    cursor: pointer;
+    color: antiquewhite;
+    transition: background-color .3s ease;
+}
+
+
+.btn-default a {
+    color: antiquewhite;
+    text-decoration: none;
+}
+
+
+.btn-default:hover {
+    background-color: rgba(102, 67, 53, 0.863);
+}
+
+
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(36, 14, 2);
+    cursor: pointer;
+    transition: 4s;
+    padding: 100px 8%;
+    background-image: url(https://blog.coffeemais.com/wp-content/uploads/2021/07/tipos-de-graos-de-cafe.jpg);
+    color: #fff9eaf5;
+
+
+}
+
+
+#intro h1 {
+    font-size: 40px;
+    text-shadow: #000000;
+}
+
+
+#intro p {
+    font-size: 25px;
+    color: #fff9eaea;
+}
+
+
+.image {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    box-shadow: #000000;
+}
+
+
+#SobreNTexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#sobrenos {
+    display: flex;
+    flex-direction: rows;
+}
+
+
+
+
+.SobreNos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.TextoNos {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.NosImg {
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+
+
+.SobreLoja {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+    background-color:   rgb(102, 67, 53);
+}
+
+.SobreLoja h1{
+    font-size: 45px;
+    color: #fff9ea;
+}
+
+.SobreLoja p{
+    font-size: 18px;
+    color: #fff9ea;
+}
+
+.TextoSobre {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+.ImgSobre {
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.SobreEmpregados {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+
+.TextoEmpregados {
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+
+.Empregadosimg {
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+    grid-row-start: 2;
+}
+
+
+
+
+footer {
+    width: 100%;
+    color: white;
+}
+
+#footer_content {
+    background-color: rgb(146, 91, 69);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts p {
+    color: rgba(255, 255, 255, 0.616);
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer_link {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: white;
+    border-radius: 50%;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+
+}
+
+.footer_list .footer_link {
+    color: rgba(255, 255, 255, 0.616);
+    transition: all 0.4s;
+}
+
+.footer_list .footer_link:hover {
+    color: rgb(199, 133, 48);
+}
+
+.footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.footer_subscribe p {
+    color: rgba(255, 255, 255, 0.616);
+}
+
+#inpud_group {
+    display: flex;
+    align-items: center;
+    background-color: rgb(109, 67, 51);
+    border-radius: 4px;
+
+}
+
+#inpud_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+
+}
+
+#inpud_group button {
+    background-color: rgb(36, 14, 2);
+    border: none;
+    color: rgba(255, 255, 255, 0.877);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    view-transition-class: all 0.4s;
+}
+
+#inpud_group button:hover {
+    opacity: 0.8;
+}
+
+#footer_copyrigth {
+    color: rgba(255, 255, 255, 0.877);
+    ;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(36, 14, 2);
+    font-size: 0.9rem;
+    padding: 1, 5rem;
+    font-weight: 100;
+
+}
