@@ -1,0 +1,394 @@
+body {
+    background-color: #fff9ea;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+#navbar {
+    display: flex;
+    width: 95%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    background-color: #fff9ea;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+#nav_logo {
+    font-size: 2.2rem;
+    color: #51311f;
+    line-height: 1.2;
+    margin-left: 0;
+    font-weight: 700;
+}
+#nav_list {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.nav-item a {
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+.nav-item a:hover {
+    color: #51311f;
+    border-bottom: 3px solid #51311f;
+}
+.nav-item.active a {
+    color: #51311f;
+    border-bottom: 3px solid #51311f;
+}
+#cart-icon-container {
+    position: relative;
+    margin-right: 0;
+}
+#cart-btn {
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #51311f;
+    transition: color 0.3s ease;
+}
+#cart-btn:hover {
+    color: #7b4f3b;
+}
+#cart-count {
+    background-color: #e04b4b;
+    color: white;
+    font-size: 0.75rem;
+    padding: 2px 7px;
+    border-radius: 50%;
+    top: -8px;
+    right: -12px;
+    font-weight: bold;
+}
+
+
+.banner {
+    width: 100%;
+    height: 700px;
+    background-image: url('https://static.vecteezy.com/ti/fotos-gratis/p1/60599977-delicioso-croissants-servido-com-cafe-em-uma-rustico-de-madeira-mesa-para-uma-perfeito-cafe-da-manha-experiencia-gratis-foto.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 8%;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    scroll-margin-top: 80px;
+}
+.banner-content {
+    max-width: 550px;
+}
+.banner-content h1 {
+    font-size: clamp(2.5rem, 5.5vw, 4rem);
+    margin-bottom: 0.7em;
+    line-height: 1.2;
+    font-weight: 800;
+}
+.banner-content p {
+    font-size: clamp(1.1rem, 2.2vw, 1.6rem);
+    max-width: 450px;
+    line-height: 1.6;
+    margin-bottom: 2.5em;
+}
+.banner-content .btn-default {
+    background-color: #51311f;
+    color: white;
+    border: none;
+    top: 0;
+    padding: 14px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.banner-content .btn-default:hover {
+    background-color: #7b4f3b;
+    transform: translateY(-3px);
+}
+
+
+.menu-categorias {
+    text-align: center;
+    padding: 60px 20px 40px;
+    scroll-margin-top: 80px;
+    background-color: #f8f0e3;
+}
+.menu-categorias h3 {
+    font-size: 2.2rem;
+    color: #51311f;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.menu-categorias ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+.menu-categorias a {
+    text-decoration: none;
+    color: #51311f;
+    font-weight: bold;
+    font-size: 1.3em;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-bottom 0.3s ease;
+}
+.menu-categorias a:hover {
+    background-color: #e0d0c0;
+    color: #51311f;
+    border-bottom: 2px solid #7b4f3b;
+}
+.menu-categorias li.active a {
+    background-color: #e0d0c0;
+    color: #51311f;
+    border-bottom: 3px solid #7b4f3b;
+}
+
+
+.caixa-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    padding: 40px 20px;
+    scroll-margin-top: 80px;
+}
+.caixa-container .category-title {
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: #51311f;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+
+#chas {
+    background-color: #925b45;
+}
+#chas .category-title {
+    color: #fff9ea;
+}
+#chas .caixa {
+    background-color: #fff9ea;
+}
+#chas .descricao-produto h4, #chas .preco {
+    color: #51311f;
+}
+
+
+.caixa {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 320px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.caixa:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.caixa img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+.descricao-produto {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-grow: 1;
+    text-align: center;
+}
+.descricao-produto h4 {
+    margin: 0 0 12px 0;
+    color: #51311f;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+.descricao-produto p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: auto;
+    flex-grow: 1;
+    line-height: 1.5;
+}
+.preco {
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #51311f;
+    margin: 20px 0;
+}
+.botao-comprar {
+    background-color: #7b4f3b;
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1em;
+}
+.botao-comprar:hover {
+    background-color: #51311f;
+    transform: translateY(-2px);
+}
+
+
+footer {
+    width: 100%;
+    color: white;
+}
+
+#footer_content {
+    background-color: rgb(146, 91, 69);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts p {
+    color: rgba(255, 255, 255, 0.616);
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+#footer_social_media {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.8rem;
+    justify-content: flex-start;
+}
+#footer_social_media .footer_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+#footer_social_media .footer_link:hover {
+    background-color: #7b4f3b;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+
+}
+.footer_list .footer_link {
+    color: rgba(255, 255, 255, 0.616);
+    transition: all 0.4s;
+}
+
+.footer_list .footer_link:hover {
+    color: rgb(199, 133, 48);
+}
+
+.footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+.footer_subscribe p {
+    color: rgba(255, 255, 255, 0.616);
+}
+
+#inpud_group {
+    display: flex;
+    align-items: center;
+    background-color: rgb(109, 67, 51);
+    border-radius: 4px;
+
+}
+
+#inpud_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+
+}
+
+#inpud_group button {
+    background-color:  rgb(36, 14, 2);
+    border: none;
+    color:  rgba(255, 255, 255, 0.877);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    view-transition-class: all 0.4s;
+}
+
+#inpud_group button:hover {
+    opacity: 0.8;
+}
+#footer_copyrigth {
+    color: rgba(255, 255, 255, 0.877);;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(36, 14, 2);
+    font-size: 0.9rem;
+    padding: 1,5rem;
+    font-weight: 100;
+
+}
+
+.section-title {
+    color: rgb(109, 67, 51);
+    font-size: 1.563rem;
+}
+
+.section-subtitle {
+    font-size: 2.1875rem;
+
+}
+
+#footer_social_media a {
+    text-decoration: none;
+    font-size: 30px;
+}

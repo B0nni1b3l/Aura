@@ -7,8 +7,10 @@
 }
 
 #testimonial_chef {
-    width: 500px;
+    width: 400px;
     height: auto;
+    border-radius: 18px;
+    box-shadow: rgba(0, 0, 0, 0.678) 0px 5px 15px;
     object-fit: cover;
 }
 

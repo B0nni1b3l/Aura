@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <i class="fa-duotone fa-solid fa-mug-hot" style="--fa-primary-color: #51311f; --fa-secondary-color: #51311f;" id="nav_logo">grain<br>aura</i>
+            <ul id="nav_list">
+                <li class="nav-item">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item active">
+                    <a href="#menu">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials">Avaliações</a>
+                </li>
+            </ul>
+            <div id="cart-icon-container">
+                <i class="fa-solid fa-cart-shopping" id="cart-btn"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </nav>
+    </header>
+    <main id="content">
+        <section id="home">
+            <div class="banner">
+                <div class="banner-content">
+                    <h1>A Nossa História Começa na Sua Xícara.</h1>
+                    <p> Saboreie bebidas e doces artesanais, feitos com ingredientes frescos e paixão em cada detalhe.</p>
+                    <a href="#menu" class="btn-default">Compre agora</a>
+                </div>
+            </div>
+        </section>
+        <section class="menu-categorias" id="menu">
+            <h3>Nossas Categorias</h3>
+            <ul id="section_cardapio">
+                <li class="section" data-category="cafes">
+                    <a href="#cafes">Cafés</a>
+                </li>
+                <li class="section" data-category="chas">
+                    <a href="#chas">Chás</a>
+                </li>
+                <li class="section" data-category="confeitarias">
+                    <a href="#confeitarias">Confeitarias</a>
+                </li>
+            </ul>
+        </section>
+        <div id="cardapio-geral">
+            <section id="cafes" class="caixa-container">
+                <h2 class="category-title">Cafés</h2>
+                <div class="caixa">
+                    <img src="https://img.freepik.com/fotos-gratis/uma-vista-superior-de-cafe-expresso-quente-com-sementes-de-cafe-marrom-na-mesa-de-madeira-marrom-bebida-de-xicara-de-cafe_140725-28168.jpg?semt=ais_hybrid&w=740&q=80" alt="Expresso" class="img-fundo">
+                    <div class="descricao-produto">
+                        <h4>Expresso</h4>
+                        <p>Um café forte e encorpado, com aroma intenso.</p>
+                        <span class="preco">R$ 9,50</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://i.pinimg.com/736x/4e/f0/b0/4ef0b050ad316863006c38c362105202.jpg" alt="Café com Leite">
+                    <div class="descricao-produto">
+                        <h4>Café com Leite</h4>
+                        <p>Clássico café com leite vaporizado, suave e cremoso.</p>
+                        <span class="preco">R$ 8,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://i.pinimg.com/originals/8b/ce/e1/8bcee16eeefb628704631716e9b267fe.jpg" alt="Latte Macchiato">
+                    <div class="descricao-produto">
+                        <h4>Latte Macchiato</h4>
+                        <p>Bebida em camadas com leite vaporizado, expresso e espuma.</p>
+                        <span class="preco">R$ 11,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://images.mrcook.app/recipe-image/0195f2c4-46c8-7920-aec8-7da5e27d2351" alt="Mocaccino">
+                    <div class="descricao-produto">
+                        <h4>Mocaccino</h4>
+                        <p>A combinação perfeita de expresso, chocolate e leite cremoso.</p>
+                        <span class="preco">R$ 12,50</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://images.creativefabrica.com/products/previews/2024/04/05/TNX2RWnwK/2fWdKMPNZkTvryPivYyYGiVcxSj-desktop.jpg" alt="Café americano">
+                    <div class="descricao-produto">
+                        <h4>Café americano</h4>
+                        <p>Café forte misturado com água quente, menos encorpado.</p>
+                        <span class="preco">R$ 6,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://producteurslaitiersducanada.ca/sites/default/files/image_file_browser/conso_recipe/2022/Capuccino.jpg" alt="Cappuccino">
+                    <div class="descricao-produto">
+                        <h4>Cappuccino</h4>
+                        <p>Café expresso, leite vaporizado e uma generosa camada de espuma.</p>
+                        <span class="preco">R$ 10,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://aboveaveragecoffee.com/wp-content/uploads/2021/05/Espresso-Macchiato-What-it-is-how-to-make-it-how-it-tastes.jpg" alt="Macchiato">
+                    <div class="descricao-produto">
+                        <h4>Macchiato</h4>
+                        <p>Expresso "manchado" com uma pequena quantidade de leite quente.</p>
+                        <span class="preco">R$ 9,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://th.bing.com/th/id/R.5ef95464ad7f87792b71811a251726ef?rik=L%2be5w0KvDcq2NQ&riu=http%3a%2f%2fwww.creative-culinary.com%2fwp-content%2fuploads%2firish-coffee-2.jpg&ehk=xEDlB4WjNugWnVJ3Y2DavWajnE6eZvxNjwwmmn87ID4%3d&risl=&pid=ImgRaw&r=0" alt="Irish Coffee">
+                    <div class="descricao-produto">
+                        <h4>Irish Coffee</h4>
+                        <p>Café quente com whisky irlandês, açúcar e creme de leite batido.</p>
+                        <span class="preco">R$ 16,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.3yAlIA7RDebfk6G7d8zeFwHaHa?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Affogato">
+                    <div class="descricao-produto">
+                        <h4>Affogato</h4>
+                        <p>Sorvete de creme afogado em uma dose de expresso quente.</p>
+                        <span class="preco">R$ 13,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://www.dci.com.br/wp-content/uploads/2021/02/cafe-gelado.jpg" alt="Café Gelado">
+                    <div class="descricao-produto">
+                        <h4>Café Gelado</h4>
+                        <p>Refrescante café com gelo, perfeito para dias quentes.</p>
+                        <span class="preco">R$ 8,50</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+            </section>
+            <section id="chas" class="caixa-container">
+                <h2 class="category-title">Chás</h2>
+                <div class="caixa">
+                    <img src="https://areademulher.r7.com/wp-content/uploads/2022/03/os-beneficios-do-cha-de-camomila-para-a-saude-7.jpg" alt="Chá de Camomila">
+                    <div class="descricao-produto">
+                        <h4>Chá de Camomila</h4>
+                        <p>Bebida calmante e relaxante, ideal para o final do dia.</p>
+                        <span class="preco">R$ 5,50</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://vitat.com.br/wp-content/uploads/2023/10/shutterstock_265400270.jpg" alt="Chá Verde">
+                    <div class="descricao-produto">
+                        <h4>Chá Verde</h4>
+                        <p>Chá com propriedades antioxidantes e sabor suave.</p>
+                        <span class="preco">R$ 6,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgYCS1AyYrqlsbA6iWX1WTihIhVRMRnx3DC9HgWKOReqMnym-8R5lxGVBw9yIKNJ34U7U&usqp=CAU" alt="Chá Preto">
+                    <div class="descricao-produto">
+                        <h4>Chá Preto</h4>
+                        <p>Chá clássico, encorpado e energizante.</p>
+                        <span class="preco">R$ 6,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://vemat.com.br/blog/wp-content/uploads/2019/06/cha-de-hortela.jpg" alt="Chá de Hortelã">
+                    <div class="descricao-produto">
+                        <h4>Chá de Hortelã</h4>
+                        <p>Refrescante chá de hortelã, ótimo para digestão.</p>
+                        <span class="preco">R$ 5,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://img.freepik.com/fotos-premium/cha-de-frutas-vermelhas-frescas_286393-187.jpg" alt="Chá de Frutas Vermelhas">
+                    <div class="descricao-produto">
+                        <h4>Chá de Frutas Vermelhas</h4>
+                        <p>Delicioso chá com mix de frutas vermelhas.</p>
+                        <span class="preco">R$ 7,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://rotasdeviagem.com.br/wp-content/uploads/2023/05/Beneficios-do-cha-de-limao-e-gengibre.png" alt="Chá de Gengibre e Limão">
+                    <div class="descricao-produto">
+                        <h4>Chá de Gengibre e Limão</h4>
+                        <p>Chá revigorante com gengibre e um toque cítrico de limão.</p>
+                        <span class="preco">R$ 6,50</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://valentinascorner.com/wp-content/uploads/2022/09/Iced-Chai-Latte-Recipe-7-760x1140.jpg" alt="Chai Latte">
+                    <div class="descricao-produto">
+                        <h4>Chai Latte</h4>
+                        <p>Chá preto com especiarias e leite vaporizado.</p>
+                        <span class="preco">R$ 10,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.H8xxLNrXSGQR9MvSmNxZvwHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chá Branco">
+                    <div class="descricao-produto">
+                        <h4>Chá Branco</h4>
+                        <p>Chá delicado e suave, com sabor adocicado.</p>
+                        <span class="preco">R$ 7,50</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.WPwLJcoOuIYiGwU8c8KP1gHaE8?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Chá Rooibos">
+                    <div class="descricao-produto">
+                        <h4>Chá Rooibos</h4>
+                        <p>Chá sem cafeína, naturalmente doce e terroso.</p>
+                        <span class="preco">R$ 6,50</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://www.foodtempel.de/wp-content/uploads/2023/03/Aromatischer-Cocktail-mit-Aprikosen-und-Amaretto.jpg" alt="Chá Gelado Pêssego">
+                    <div class="descricao-produto">
+                        <h4>Chá Gelado Pêssego</h4>
+                        <p>Chá gelado refrescante com sabor natural de pêssego.</p>
+                        <span class="preco">R$ 7,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+            </section>
+            <section id="confeitarias" class="caixa-container">
+                <h2 class="category-title">Confeitarias</h2>
+                <div class="caixa">
+                    <img src="https://cdn.vidaativa.pt/uploads/2020/03/bolo-de-chocolate.jpg" alt="Bolo de Chocolate">
+                    <div class="descricao-produto">
+                        <h4>Bolo de Chocolate</h4>
+                        <p>Delicioso bolo de chocolate com recheio cremoso.</p>
+                        <span class="preco">R$ 15,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://www.thespruceeats.com/thmb/W-Ur-ceUIwo0XLyBPzT2VwcwgJU=/1500x1000/filters:fill(auto,1)/gluten-free-new-york-cheesecake-1450985-hero-01-dc54f9daf38044238b495c7cefc191fa.jpg" alt="Cheesecake">
+                    <div class="descricao-produto">
+                        <h4>Cheesecake</h4>
+                        <p>Torta de queijo cremosa com calda de frutas vermelhas.</p>
+                        <span class="preco">R$ 18,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://essareceitafunciona.com.br/wp-content/uploads/2022/07/Pao-de-queijo-Essa-Receita-Funciona-9.jpg" alt="Pão de Queijo">
+                    <div class="descricao-produto">
+                        <h4>Pão de Queijo</h4>
+                        <p>O tradicional pão de queijo quentinho e crocante.</p>
+                        <span class="preco">R$ 4,50</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://www.justspices.es/media/recipe/brownie-chocolate.jpg" alt="Brownie">
+                    <div class="descricao-produto">
+                        <h4>Brownie</h4>
+                        <p>Brownie de chocolate intenso com nozes.</p>
+                        <span class="preco">R$ 9,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://th.bing.com/th/id/R.64e5613f6d2b1a595264ca85e1f3b991?rik=0WRBkExCBY%2bwJQ&pid=ImgRaw&r=0" alt="Croissant">
+                    <div class="descricao-produto">
+                        <h4>Croissant</h4>
+                        <p>Folhado amanteigado, perfeito para o café da manhã.</p>
+                        <span class="preco">R$ 7,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://cakescottage.com/wp-content/uploads/2021/02/blueberry-muffins-ca1.jpg" alt="Muffin de Blueberry">
+                    <div class="descricao-produto">
+                        <h4>Muffin de Blueberry</h4>
+                        <p>Muffin macio com mirtilos frescos.</p>
+                        <span class="preco">R$ 8,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://oimparcial.com.br/app/uploads/2021/03/165986a9d6d461eb96eadc11e7c117a3.jpg" alt="Torta de Limão">
+                    <div class="descricao-produto">
+                        <h4>Torta de Limão</h4>
+                        <p>Torta refrescante com recheio cremoso de limão.</p>
+                        <span class="preco">R$ 16,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://i.pinimg.com/736x/ed/87/e8/ed87e84b26193cb02064580f9fce4731.jpg" alt="Cupcake de Baunilha">
+                    <div class="descricao-produto">
+                        <h4>Cupcake de Baunilha</h4>
+                        <p>Cupcake fofinho com cobertura de baunilha.</p>
+                        <span class="preco">R$ 7,50</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://midiapaulistana.com.br/wp-content/uploads/2021/09/melhores-donuts-de-sp.jpg" alt="Donuts">
+                    <div class="descricao-produto">
+                        <h4>Donuts</h4>
+                        <p>Donuts variados, macios e saborosos.</p>
+                        <span class="preco">R$ 5,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+                <div class="caixa">
+                    <img src="https://melepimenta.com/wp-content/uploads/2017/12/Biscoito-amanteigado-caseiro-Baixa-2-1024x683.jpg" alt="Biscoitos Amanteigados">
+                    <div class="descricao-produto">
+                        <h4>Biscoitos Amanteigados</h4>
+                        <p>Deliciosos biscoitos amanteigados que derretem na boca.</p>
+                        <span class="preco">R$ 6,00</span>
+                        <button class="botao-comprar">Comprar</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+
+            <h1>Logo</h1>
+            <p>Venha conhecer a caféteria dos seus sonhos</p>
+            <div id="footer_social_media">
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="Facebook">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+        <ul class="footer_list">
+            <li>
+                <h3>Horarios</h3>
+            </li>
+            <li>
+                <a href="horarios.html" class="footer_link">Veja os nossos horarios</a>
+            </li>
+        </ul>
+        <ul class="footer_list">
+            <li>
+                <h3>Sobre Nos</h3>
+            </li>
+            <li>
+                <a href="Pag2.html" class="footer_link">Conheça sobre nós</a>
+            </li>
+        </ul>
+        <div class="footer_subscribe" id="Subscribe">
+            <h3>Cadastro</h3>
+            <p>Cadastre o seu e-mail para ganhe cupons de desconte e saber nas novidades <i
+                    class="fa-solid fa-face-laugh-wink"></i></p>
+            <div id="inpud_group">
+                <input type="email" id="email">
+                <button>
+                    <i class="fa-slab fa-regular fa-envelope"></i>
+                </button>
+            </div>
+        </div>
+</footer>
+<div id="footer_copyrigth">
+    &#169
+    2025 all rigths reserved
+</div>
+</body>
+</html>
